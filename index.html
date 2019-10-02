@@ -71,7 +71,10 @@ report("#A4",answer)
 <div id="A5">
 <h3>Find the mean of all the quiz score of the class. </h3>
 <script>
-    var meanall= classroom.map(classmeans)
+    var meanall = function (classmeans)
+    {
+        return d3.mean (classmeans)
+    }
 var answer=meanall;
 report("#A5",answer)    
 </script>
